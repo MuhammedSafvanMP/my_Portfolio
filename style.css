@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins&family=Tektur:wght@600&display=swap");
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+}
+nav{
+  /* border-bottom: 1px solid  #EFEFEF; */
+  z-index: 999;
+}
+.size{
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.size:hover{
+  padding: 5px 10px;
+  border:  1px solid #EFEFEF;
+}
+.size:focus{
+  padding: 5px 10px;
+  border:  1px solid #EFEFEF;
+}
+#title {
+  font-family: "Tektur", sans-serif;
+  font-size: 1.8rem;
+}
+h2,h3,p{
+  font-family: "Open Sans", sans-serif;
+  color: #EFEFEF;
+}
+h6{
+  letter-spacing: 5px;
+}
+li,
+p,
+label {
+  font-family: "Poppins", sans-serif;
+}
+i{
+  cursor: pointer;
+}
+#relat{
+  position: relative;
+}
+#content::before{
+  content: "";
+  position: absolute;
+  border-left: 1px solid #010718;
+  animation: animate 4s steps(12) infinite;
+}
+@keyframes animate {
+  40%, 60%{
+    left: 40%;
+  }
+  100%{
+    left: 0%;
+  }
+}
+
+.img {
+  height: 30%;
+  object-fit: cover;
+}
+#img_1{
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+    border-radius: 100px 10px 100px 10px;
+}
+#img_2 {
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px,
+    rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px,
+    rgba(240, 46, 170, 0.05) 0px 25px;
+    border-radius: 100px;
+
+}
+#img_3 {
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    border-radius: 10px 100px 10px 100px;
+
+}
+.card{
+  transition: .8s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card:hover{
+  transform: scale(1.09);
+  z-index: 1;
+  cursor: pointer;
+}
+
+#form {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}

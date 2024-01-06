@@ -143,7 +143,7 @@
           >
             About Me
           </h2>
-          <p class="fs-3 pt-5">
+          <p class="fs-4 pt-5">
             👋 Hi,
             <br />
              I'm MUHAMMED SAFVAN MP, a budding full-stack developer with a love for coding! Recently graduated, I'm well-versed in front-end technologies like HTML, CSS, and JavaScript (React.js), and have backend experience with Node.js and Express.
@@ -156,7 +156,7 @@
         <div class="col-10 col-sm-8 col-lg-6 m-auto">
           <img
             id="img_2"
-            src="./img/safu.png"
+            src="./img/SAVE_20240106_120116.jpg"
             class="img-fluid"
             alt="..."
           />
@@ -246,6 +246,45 @@
           </div>
         </div>
       </div>
+      <div class="row justify-content-center align-items-center p-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <h3 class="p-2">
+            <i class="fa-brands fa-react" style="color: #149ECA;"></i>
+             React.JS
+          </h3>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-valuenow="65"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              style="width: 55%; background-color: #149ECA"
+            ></div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <h3 class="p-2">
+            <i class="fa-brands fa-node" style="color: #5DAE47;"></i>         
+             Node.JS
+          </h3>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated  bg-success"
+              style="width: 45%"
+            ></div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ========== End Skills Section ========== -->
@@ -262,17 +301,6 @@
               <img
               src="./img/Delivery.png"
               class="card-img-top img"
-              alt="Projects_img"
-            />
-            </a>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <a href="https://muhammedsafvanmp.github.io/netflix_signIn_Page/" target="_blank">
-              <img
-              src="./img/Netflix-India-Watch-TV-shows.png"
-              class="card-img-top"
               alt="Projects_img"
             />
             </a>
@@ -308,13 +336,14 @@
         <div class="col-lg-7 text-center text-lg-start">
           <img
             id="img_3"
-            src="./img/safu.png"
+            src="./img/SAVE_20240106_120216.jpg"
             class="card-img-top"
             alt="..."
           />
         </div>
         <div class="col-md-10 mx-auto col-lg-5 pt-4">
           <form   class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+            <p class="text-danger " id="error">please fill the form</p>
             <div class="form-floating mb-3">
 
              <input type="text" placeholder="Your Name" class="form-control" id="name">
@@ -331,7 +360,7 @@
 
               <label for="message">Your Message</label>
             </div>
-            <button onclick="sendmail()" id="submit"class="w-75 btn btn-group-sm rounded-5 btn-info text-dark fs-5 " type="submit">
+            <button onclick="sendmail(event)" id="submit"class="w-75 btn btn-group-sm rounded-5 btn-info text-dark fs-5 " type="button">
               SEND MESSAGE
             </button>
           </form>

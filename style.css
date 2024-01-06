@@ -76,13 +76,14 @@ i{
     rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px,
     rgba(240, 46, 170, 0.05) 0px 25px;
     border-radius: 100px;
-
+    width: 90%;
 }
 #img_3 {
   box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
     rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
     rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
     border-radius: 10px 100px 10px 100px;
+    width: 70%;
 
 }
 .card{
@@ -94,6 +95,11 @@ i{
   z-index: 1;
   cursor: pointer;
 }
+#error {
+  color: red;
+  display: none; /* Initially hide the error message */
+}
+
 
 #form {
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
